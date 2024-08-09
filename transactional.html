@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transactional Email Template</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+        html {
+            box-sizing: border-box;
+            font-family: "Roboto Mono", monospace;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        body {
+            margin: 0;
+            background-color: #DAD4CB;
+        }
+
+        a {
+            color: blue;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        .main {
+            max-width: 600px;
+            background-color: #e6e8f4;
+            color: #44413D;
+        }
+
+        .paypal-create-account-button {
+            display: inline-block;
+            border-radius: 15px;
+            padding: 8px 24px;
+            background-color: #273469;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .purchase-details {
+            padding-bottom: 20px;
+        }
+
+        .purchase-details-heading {
+            color: black;
+            font-weight: 700;
+        }
+
+        .paypal-link {
+            text-decoration: none;
+            font-size: 11px;
+            color: blue;
+        }
+
+        .external-links-container a {
+            color: #e6e8f4;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table class="main">
+            <!-- The main table should have only one row because there needs to be padding all around the main table and padding can only be added to <td>s. We will apply padding all around the main table using only a single td instead of doing it in all the <td>s. -->
+            <tr>
+                <td style="padding: 30px;">
+                    <table>
+                        <!-- LOGO -->
+                        <tr>
+                            <td style="padding-bottom: 40px;">
+                                <a href="https://sukhbirchung.com/">
+                                    <img src="transactional-images/logo.png" alt="Paypal logo"
+                                        width="64">
+                                </a>
+                            </td>
+                        </tr>
+
+                        <!-- PAYMENT HEADING -->
+                        <tr>
+                            <td style="padding-bottom: 30px; font-size: 30px; font-weight: 600; color: darkslateblue;">
+                                You paid $3000.00 CAD to Hogwarts School
+                            </td>
+                        </tr>
+
+                        <!-- PAYPAL CREATE ACCOUNT TEXT -->
+                        <tr>
+                            <td style="padding-bottom: 30px; font-size: 20px;">
+                                Create a PayPal account for fast, secure checkouts at millions of merchants.
+                            </td>
+                        </tr>
+
+                        <!-- PAYPAL CREATE ACCOUNT BUTTON -->
+                        <tr>
+                            <td style="padding-bottom: 30px;">
+                                <a href="https://sukhbirchung.com" class="paypal-create-account-button">Create PayPal Account
+                                    Now</a>
+                            </td>
+                        </tr>
+
+                        <!-- PAYMENT DETAILS -->
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td colspan="2"
+                                            style="padding-bottom: 25px; font-size: 18px; color: darkslateblue;">Your
+                                            purchase details</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="purchase-details">
+                                            <span class="purchase-details-heading">Your Transaction
+                                                ID:</span><br />5S24304454249415Y
+                                        </td>
+                                        <td class="purchase-details">
+                                            <span class="purchase-details-heading">Merchant Transaction
+                                                ID:</span><br />8GT10783RE469406Z
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="purchase-details"><span
+                                                class="purchase-details-heading">Purchase Date:</span><br />August 1,
+                                            2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="purchase-details">
+                                            <span class="purchase-details-heading">Payment
+                                                to:</span><br />Hogwarts<br /><a
+                                                href="https://sukhbirchung.com">payment@hogwarts.com</a>
+                                        </td>
+                                        <td class="purchase-details">
+                                            <span class="purchase-details-heading">Payment from:</span><br />Albus
+                                            Severus Potter
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="purchase-details">
+                                            <span class="purchase-details-heading">Shipping Address</span><br />
+                                            Albus Severus Potter<br />
+                                            27 Applewood Cres<br />
+                                            Stratford ON K7R 3F8<br />
+                                            Canada
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- TOTAL SUMMARY -->
+                        <tr>
+                            <td style="padding-bottom: 30px;">
+                                <table style="text-align: right; font-size: 14px;">
+                                    <tr>
+                                        <td>Subtotal</td>
+                                        <td>$3000.00 CAD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GST</td>
+                                        <td>$0.00 CAD</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="purchase-details-heading">Total Amount you paid</td>
+                                        <td class="purchase-details-heading">$3000.00 CAD</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="font-size: 14px;">You paid using: Mastercard x-1234</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border-bottom: 1px solid gray;">
+                                <a href="https://sukhbirchung.com">
+                                    <img src="transactional-images/logo-paypal.png"
+                                        alt="paypal logo" width="150">
+                                </a>
+                            </td>
+                        </tr>
+
+                        <!-- PAYPAL LINKS -->
+                        <tr>
+                            <td style="padding: 15px 0 30px;">
+                                <table style="width: max-content;">
+                                    <tr>
+                                        <td><a href="https://sukhbirchung.com" class="paypal-link"
+                                                style="border-right: 1px solid darkslategray;">Help & Contact&nbsp;</a>
+                                        </td>
+                                        <td><a href="https://sukhbirchung.com" class="paypal-link"
+                                                style="border-right: 1px solid darkslategray;">&nbsp;Security&nbsp;</a>
+                                        </td>
+                                        <td><a href="https://sukhbirchung.com" class="paypal-link">&nbsp;Apps</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- EXTERNAL LINKS -->
+                        <tr>
+                            <td class="external-links-container" style="padding-bottom: 20px;">
+                                <a href="https://sukhbirchung.com">
+                                    <img src="transactional-images/instagram.png"
+                                        alt="Instagram icon" width="25">
+                                </a>
+                                <a href="https://sukhbirchung.com">
+                                    <img src="transactional-images/facebook.png"
+                                        alt="facebook icon" width="25">
+                                </a>
+                                <a href="https://sukhbirchung.com">
+                                    <img src="transactional-images/linkedin.png"
+                                        alt="LinkedIn icon" width="25">
+                                </a>
+                            </td>
+                        </tr>
+
+                        <!-- FOOTER -->
+                        <tr>
+                            <td style="font-size: 11px;">
+                                PayPal is committed to preventing fraudulent emails. Emails from PayPal will always
+                                contain your full name. <a href="https://sukhbirchung.com"
+                                    style="text-decoration: none;">Learn to identify phishing</a><br /><br />
+
+                                This email was sent to you for the ongoing support and maintenance of your account. To
+                                manage your communication preferences, please visit our <a href="https://sukhbirchung.com"
+                                    style="text-decoration: none;">preference centre</a>.<br /><br />
+
+                                Please do not reply to this email. We are unable to respond to inquiries sent to this
+                                address. For immediate answers to your questions, visit our Help Centre by clicking
+                                <b>Help & Contact</b>
+                                located on any PayPal page or email. PayPal is committed to your privacy, learn more
+                                about our <a href="https://sukhbirchung.com" style="text-decoration: none;">privacy
+                                    statement</a>.<br /><br />
+
+                                Not sure why you received this email? <a href="https://sukhbirchung.com"
+                                    style="text-decoration: none;">Learn more</a><br /><br />
+
+                                Copyright © 2024 PayPal Canada Co., 661 University Ave., Toronto, ON M5G 1M1. All rights
+                                reserved.
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
